@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Our Company</h1>
+        <p>Your success is our priority</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#resume">Resume Building</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p> We provide end-to-end web development solutions, including responsive website design, backend development, and e-commerce integration. Our expertise ensures scalable, secure, and high-performance web applications tailored to your business needs.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <h3>Web Development</h3>
+            <p>Building modern and responsive websites.</p>
+        </div>
+        <div class="service-card">
+            <h3>Digital Marketing</h3>
+            <p>Helping businesses grow online with proven strategies.</p>
+        </div>
+    </section>
+
+     <!-- Resume Builder Section -->
+     <section id="resume">
+        <h2>Resume Builder</h2>
+        <p>Choose a template, fill in your details, and generate your professional resume.</p>
+        
+        <form id="resume-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="email" placeholder="Your Email" required>
+            <input type="text" id="phone" placeholder="Your Phone" required>
+            <textarea id="experience" placeholder="Your Experience"></textarea>
+            
+            <!-- Template Selection -->
+            <select id="template">
+                <option value="basic">Basic Template</option>
+                <option value="modern">Modern Template</option>
+                <option value="elegant">Elegant Template</option>
+            </select>
+
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+            <button type="button" onclick="downloadResume()">Download PDF</button>
+        </form>
+
+        <div id="resume-output"></div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="response-message"></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Company Name. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
